@@ -1,62 +1,68 @@
-# Trabalho Final WEB
-#### Nomes - Marcos Cabral, Jhonatan Rotta Santana, Henrique Cavalcante Rodrigues
+<h1 align="center" style="font-weight: bold;">Agência de Eventos 💻</h1>
 
-# Agência de Eventos - Sistema de Gestão
+<h3>Nomes dos integrantes do grupo:</h3> <h4>Marcos Cabral, Jhonatan Rotta Santana, Henrique Cavalcante Rodrigues</h4>
 
-Este é um sistema de gestão de eventos e clientes para uma agência de eventos. Ele permite o cadastro, gerenciamento e exibição de eventos e clientes. Além disso, oferece uma visão geral do status dos eventos e clientes ativos.
+<h2 id="started">📌 Sobre</h2>
 
-## Funcionalidades
+O projeto foi desenvolvido com a linguagem TypeScript. O backend foi desenvolvido em NODE, com o framework Fastify, Prisma sendo o ORM e com o banco de dados sendo o MongoDB. Já o seu Frontend foi desenvolvido em ReactJS, utilizado Axios para o consumo da API e Styled Components para a estilização.
 
-- **Login de usuário**: Tela de login para autenticação e acesso ao sistema.
-- **Cadastro de Eventos**: Cadastro de eventos, incluindo dados como nome, data, cliente, local e tipo de evento.
-- **Gerenciamento de Clientes**: Cadastro, edição e exclusão de clientes. Exibe uma lista com todos os clientes cadastrados.
-- **Dashboard**: Exibe uma visão geral com contagens de eventos do dia, eventos pendentes e clientes ativos. Além disso, exibe uma lista dos próximos eventos.
+<h2 id="started">📌 Funcionalidades</h2>
 
-## Tecnologias Utilizadas
+- Adição de eventos;
+- Listagem de eventos;
+- Atualização de eventos que já existem;
+- Remoção de eventos;
+- Login;
+- Cadastro de usuário;
+- Responsividade
 
-- **Frontend**:
-  - **HTML**: Estrutura das páginas.
-  - **CSS**: Estilização do layout e componentes.
-  - **JavaScript**: Lógica para interação com o backend e manipulação da interface.
+Cada evento possui um nome, descrição, quantidades de dias que ocorrerá, horário de início, horário de término e local do evento.Além destas funcionalidades é possível ver quem foram os criadores de cada evento.
 
-- **Backend**:
-  - **Node.js**: Servidor backend para gerenciar a API de eventos e clientes.
-  - **Fastify**: Framework para construção de APIs rápidas e eficientes.
-  - **Prisma**: ORM para facilitar a interação com o banco de dados.
-  - **MySQL**: Banco de dados NoSQL utilizado para armazenar os dados de eventos e clientes.
+<h2 id="images">📍 Funcionamento</h2>
 
-## Instalação e Execução
+![Image](https://github.com/user-attachments/assets/1313256d-6142-4201-92d7-c093303ee671)
 
-### Para Clonar o Repositório
+![Image](https://github.com/user-attachments/assets/5b7382e0-160d-44d9-8d6d-6785c9270118)
+
+![Image](https://github.com/user-attachments/assets/987c922e-a6ce-4bac-9aec-2ecec8770d06)
+
+<h2 id="started">🚀 Instalação</h2>
+
+O projeto foi feito com a versão 20 do NODE, por isso, certifique a versão do seu NODE para que não haja bugs.
+Os exemplos de instalação serão feitos com NPM porém você pode usar o pnpm ou yarn.
+
+<h3>Clonando</h3>
 
 ```bash
-git clone https://github.com/seu-usuario/agencia-de-eventos.git
+git clone https://github.com/markkjjk/gerenciador-de-eventos.git
 ```
 
-### Entre na pasta de "frontend" e também no "backend", abra o terminal e digite o comando para instalar todas as dependências:
+<h3>Frontend</h3>
+
+Entre na pasta de frontend, abra o terminal e digite o comando para instalar todas as dependências:
 
 ```bash
 npm install
 ```
-
-### Baixe o MySQL e crie um banco de dados para o projeto. Faça isso acessando o MySQL via terminal ou utilizando um cliente como o MySQL Workbench.
-```bash
-CREATE DATABASE agencia_eventos;
-```
-
-### Configure a URL de conexão com o MySQL. Altere os valores da DATABASE_URL de acordo com suas credenciais de acesso, exemplo:
+Para rodar a aplicação frontend, no seu terminal digite o seguinte comando e clique o link que aparecer:
 
 ```bash
-DATABASE_URL="mysql://usuario:senha@localhost:3000/agencia_eventos"
+npm run dev
 ```
 
-### Após o servidor estar rodando, acesse o frontend pelo navegador:
+<h3>Backend</h3>
+
+Entre na pasta de "backend", abra o terminal e digite o comando para instalar todas as dependências:
 
 ```bash
-http://localhost:3000 
+npm install
 ```
+Como esse projeto foi desenvolvido com MONGO Db, será necessário você ter uma conta no atlas. Para pegar sua URL do banco de dados basta criar um novo projeto -> clicar no nome do projeto que você acabou de criar -> clicar em connect -> clicar em Drivers -> selecionar o NODE, copiar o link do banco de dados -> Colar esse link no DATABASE_URL que está no arquivo .env.
 
+Não se esqueça de instalar o mongo db no seu projeto.
 
-## Licença
+Após feito esse conexão basta digitar o comando abaixo e seu backend jpa está no funcionando.
 
-Este projeto está licenciado sob a **MIT License.**
+```bash
+npm run dev
+```
